@@ -15,3 +15,10 @@ rowDivs.forEach(rowDiv =>{
         rowDiv.appendChild(col);
     }
 })
+
+const colDivs = document.querySelectorAll(".column")
+colDivs.forEach((colDiv) =>{
+    colDiv.addEventListener("mouseover", () => {
+        colDiv.style.backgroundColor = "gray";
+    })
+})
