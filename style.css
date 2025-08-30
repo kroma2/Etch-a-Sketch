@@ -7,3 +7,14 @@
 #container{
     display: flex;
 }
+
+#set-button {
+    background: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#set-button:active {
+    background-color: rgba(77, 77, 77, 0.5)
+}
