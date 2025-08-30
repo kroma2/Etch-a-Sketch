@@ -1,15 +1,31 @@
 const containerDiv = document.querySelector("#container");
 
-for(let r = 0; r < 16; r++){
+let number = 16;
+makeGrid(number);
+
+const setButton = document.querySelector("#set-button")
+setButton.addEventListener("click", () =>{
+    number = prompt("Please enter the size of the grid (between 1 and 100)", "16");
+    if(number <=100 && number > 0){
+        containerDiv.replaceChildren()
+        makeGrid(number)
+    }
+    else{
+        alert("Please input number between 1 and 100")
+    }
+     
+})
+
+function makeGrid(number){
+for(let r = 0; r < number; r++){
     let row = document.createElement("div");
     row.setAttribute("class", "row");
     containerDiv.appendChild(row);
 }
 
-
 const rowDivs = document.querySelectorAll(".row");
 rowDivs.forEach(rowDiv =>{
-    for(let c = 0; c < 16; c++){
+    for(let c = 0; c < number; c++){
         let col = document.createElement("div");
         col.setAttribute("class", "column");
         rowDiv.appendChild(col);
@@ -22,3 +38,7 @@ colDivs.forEach((colDiv) =>{
         colDiv.style.backgroundColor = "gray";
     })
 })
+}
+
+
+
