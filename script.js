@@ -43,8 +43,10 @@ function getRandomColor() {
 
 const colDivs = document.querySelectorAll(".column")
 colDivs.forEach((colDiv) =>{
+    colDiv.style.opacity = 0.1;
     colDiv.addEventListener("mouseover", () => {
         colDiv.style.backgroundColor = getRandomColor();
+        colDiv.style.opacity = (parseFloat(colDiv.style.opacity)) + 0.1;
     })
 })
 }
