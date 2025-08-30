@@ -32,10 +32,19 @@ rowDivs.forEach(rowDiv =>{
     }
 })
 
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
 const colDivs = document.querySelectorAll(".column")
 colDivs.forEach((colDiv) =>{
     colDiv.addEventListener("mouseover", () => {
-        colDiv.style.backgroundColor = "gray";
+        colDiv.style.backgroundColor = getRandomColor();
     })
 })
 }
