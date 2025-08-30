@@ -18,8 +18,8 @@ body {
 
 #container{
     display: flex;
-    height: 920px;
-    width: 920px;
+    height: 800px;
+    width: 800px;
     flex-direction: column;
 }
 
