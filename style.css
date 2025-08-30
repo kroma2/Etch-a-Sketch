@@ -18,9 +18,9 @@ body {
 
 #container{
     display: flex;
-    height: 960px;
-    width: 960px;
-    flex-direction: column;    
+    height: 920px;
+    width: 920px;
+    flex-direction: column;
 }
 
 #set-button {
