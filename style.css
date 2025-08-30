@@ -8,12 +8,19 @@ body {
 
 .column{
     border: 1px solid black;
-    width: 35px;
-    height: 35px;
+}
+
+.row, .column
+{
+    display: flex;
+    flex: 1;
 }
 
 #container{
     display: flex;
+    height: 960px;
+    width: 960px;
+    flex-direction: column;    
 }
 
 #set-button {
