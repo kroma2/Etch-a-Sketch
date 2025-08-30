@@ -1,7 +1,6 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-items: center;
     align-items: center;
     gap:50px
 }
@@ -18,8 +17,8 @@ body {
 
 #container{
     display: flex;
-    height: 800px;
-    width: 800px;
+    height: 40vw;
+    width: 40vw;
     flex-direction: column;
 }
 
